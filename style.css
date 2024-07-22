@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-box {
+    width: 100%;
+    height: 100vh;
+    background: url(./assets/sunny-backgroud.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-box input {
+    height: 40px;
+    padding: 10px 20px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.search {
+    position: absolute;
+    right: 27%;
+    top: 19%;
+    cursor: pointer;
+}
+
+.search button {
+    border: none;
+    background-color: transparent;
+}
+
+.date {
+    font-size: 22px;
+}
+
+.card {
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    width: 60%;
+}
+
+.condition h3 {
+    font-size: 3.3rem;
+}
+
+.temp span {
+    font-size: 3rem;
+}
+
+.temp-img img {
+    width: 60px;
+}
+
+.humidity-image img {
+    width: 32px;
+    height: 32px;
+    margin: 5px 0;
+}
+
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 785px) {
+    .card {
+        width: 100%;
+        height: 100vh;
+        /* padding: 20px 0px; */
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .input-box input {
+        width: 70%;
+    }
+
+    .search {
+        position: absolute;
+        right: 20%;
+        top: 19%;
+        cursor: pointer;
+    }
+
+    #city {
+        font-size: 3rem;
+        margin: 20px 0px;
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+
+    .weather-sec div {
+        font-size: 1.5rem;
+    }
+
+    .weather-sec img {
+        width: 60px;
+        height: 60px;
+        margin: 25px 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 100%;
+        height: 100vh;
+        padding: 20px 0px;
+    }
+
+    .input-box input {
+        width: 70%;
+    }
+
+    .search {
+        position: absolute;
+        right: 20%;
+        top: 19%;
+        cursor: pointer;
+    }
+}
